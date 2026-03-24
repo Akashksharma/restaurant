@@ -1,0 +1,228 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+     background:#ddd;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul{
+    background:green;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:10px;
+}
+
+nav ul li{
+    margin:0 50px;
+    position:relative;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    padding:7px 10px; 
+    display:block;    
+}
+
+nav ul li a:hover{
+    background:#ff6600;
+    border-radius:5px;
+}
+
+/* dropdown ul */
+
+nav ul ul{
+    position:absolute;
+    top:100%;
+    
+    left:50%;                 
+    transform:translateX(-50%); 
+    
+    display:none;
+    flex-direction:column;
+    min-width:150px;
+    background:green;
+}
+
+
+nav ul ul li{
+    margin:0;
+    display:block;
+}
+
+
+
+nav ul ul li a{
+    display:block;      
+    padding:10px 15px;
+}
+
+/* hover dropdown */
+
+nav ul li:hover > ul{
+    display:block;
+}
+
+/* page layout */
+
+.container{
+    display:flex;
+    height:400px;
+}
+
+.left{
+    width:50%;
+    padding:40px;
+    text-align: center;
+}
+.left .logo img{
+    width:40%;
+    margin: 30px;
+    text-align: center;
+}
+
+.right{
+    width:50%;
+    height:500px;
+    
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right img{
+    width:100%;
+    height:auto;
+}
+
+.container .left button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+hr{
+    border: none;
+    border-top: 3px dashed darkgreen;
+    width: 50%;
+}
+.outer{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.outer .image img{
+    width: 210px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 1s;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+
+.letter{
+    border: 2px solid black;
+    height: 200px;
+    background: url(image/bg1.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.letter .News{
+    border: 2px solid yellow;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 0px;
+    background-color: rgba(0, 0, 0,0.4);
+}
+.News input[type="Email"]
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+.News button{
+    background-color:orange;
+     border: none;
+     border-radius: 10px;
+     color: white;
+     cursor: pointer;
+    width: 100px;
+    height: 40px;
+
+}
+.News button:hover{
+    background-color: green;
+}
+footer{
+    background:#222;
+    color:white;
+    margin-top:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    width:200px;
+}
+
+.footer-box h3{
+    color:orange;
+    margin-bottom:10px;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin:8px 0;
+}
+
+.footer-box ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-box ul li a:hover{
+    color:orange;
+}
+
+.footer-bottom{
+    text-align:center;
+    background:black;
+    padding:10px;
+}
